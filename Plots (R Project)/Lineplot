@@ -1,7 +1,7 @@
 library(readxl)
 library(ggplot2)
 
-data <- read_excel("Spreadsheet")
+data <- read_excel("Spreadsheet_LP")
 
 ggplot()+
   
