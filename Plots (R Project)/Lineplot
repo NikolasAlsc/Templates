@@ -1,0 +1,14 @@
+library(readxl)
+library(ggplot2)
+
+data <- read_excel("Spreadsheet")
+
+ggplot()+
+  
+  geom_line(data = data, mapping = aes(x = X, y = Y), color = 'blue')+    # values for the line plot
+  
+  scale_x_continuous(limits = c(0, 10), name = "X-Axis")+                 # x and y scale limits
+  scale_y_continuous(limits = c(0, 10), name = "Y-Axis")+                 
+ 
+  
+  annotate("text", x = 3, y = 10, label = "example")                      # annotation on the plot   
